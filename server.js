@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
     res.end(
       JSON.stringify({
         status: "OK",
-        timestamp: new Date().toISOString(),
+        timestamp:  "現在時間： " + new Date().toISOString(),
       })
     );
     return;
@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.end(
       JSON.stringify({
-        message: "歡迎使用 API 服務",
+        message: "歡迎使用 Jring API 服務",
         endpoints: {
           health: "/api/health",
           products: "/api/products?min=5000&max=20000",
@@ -80,7 +80,7 @@ const server = http.createServer((req, res) => {
   res.statusCode = 404;
   res.end(
     JSON.stringify({
-      error: "找不到此路徑",
+      error: "找不到此路徑，請聯絡管理員。",
     })
   );
 });
