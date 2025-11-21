@@ -45,6 +45,9 @@ const server = http.createServer((req, res) => {
       { id: 4, name: "耳機", price: 2990 },
       { id: 5, name: "螢幕", price: 6990 },
        { id: 6, name: "Dell大螢幕", price: 12990 },
+        { id: 7, name: "iPhone 17", price: 52990 },
+         { id: 8, name: "iPhone 16", price: 42990 },
+           { id: 9, name: "iPhone 15", price: 32990 },
     ];
 
     // 解析 URL 和 query 參數
